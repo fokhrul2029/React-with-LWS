@@ -1,19 +1,16 @@
 # React.js
 
-- Branch: lesson-1
-- The library for web and native user interfaces and also basic information about React.js
+- Branch: lesson-2
+- Basic Information About Virtual-DOM
 
-## What is React.js
+## What is and why Virtual-DOM   
 
-- React.js is a JavaScript library for user interfaces
-- It's an open-source project
-- Front-end Library
+- [Visite This site] (https://www.geeksforgeeks.org/reactjs-virtual-dom/)
+- Search on Google to know the more information about this 
 
-## Why React.js
 
-- React.js is for making user interfaces in a website
-- It just consists of Front-end
-- React is for making re-usable component
+
+
 
 ## Getting Started
 
