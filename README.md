@@ -1,12 +1,8 @@
 # React.js
 
-- Branch: lesson-2
-- Basic Information About Virtual-DOM
-
-## What is and why Virtual-DOM   
-
-- [Visite This site] (https://www.geeksforgeeks.org/reactjs-virtual-dom/)
-- Search on Google to know the more information about this 
+- Branch: lesson-3
+- Editor setup
+- You can setup your editor that you want or watch 3 number video to setup like them 
 
 
 
