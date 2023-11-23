@@ -1,11 +1,15 @@
 # React.js
 
-- Branch: lesson-3
-- Editor setup
-- You can setup your editor that you want or watch 3 number video to setup like them 
+- Branch: lesson-4
+- Prerequistes 
 
-
-
+## Prerequistes to start React.js
+- HTML
+- CSS 
+- JS (intermediate)
+- Mordarn Js
+- Fundamental concept of React.js
+- Virtual-DOM (To undarstand How to work virtual-DOM)
 
 
 ## Getting Started
