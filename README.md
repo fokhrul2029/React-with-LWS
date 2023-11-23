@@ -1,15 +1,8 @@
 # React.js
 
-- Branch: lesson-4
-- Prerequistes 
-
-## Prerequistes to start React.js
-- HTML
-- CSS 
-- JS (intermediate)
-- Mordarn Js
-- Fundamental concept of React.js
-- Virtual-DOM (To undarstand How to work virtual-DOM)
+- Branch: lesson-5
+- JSX and Rendering Elements
+- Search on Google to know more about that or watch 5 number video of the Playlist
 
 
 ## Getting Started
