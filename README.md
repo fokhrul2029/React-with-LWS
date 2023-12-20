@@ -1,12 +1,17 @@
-# React + Vite
+# React.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Branch: lesson-7
+- React State & lifecycle
 
-Currently, two official plugins are available:
+## React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- In React, the "state" is a JavaScript object that represents the current state of a component. It is one of the fundamental concepts in React and plays a crucial role in building dynamic and interactive user interfaces
+- "Stateful Components:": Components in React can be either stateful or stateless. Stateful components are ones that have an associated state. Stateful components are created by extending the React.Component class and have the ability to manage their internal state
+- i Created a class component as Clock with state and lifecycle hook.
 
+## Lifecycle Hook
+
+- In React, lifecycle hooks (or lifecycle methods) are methods that are called at various stages of a component's existence. They allow you to perform actions at specific points in the lifecycle of a component, such as when it is about to be rendered, has been rendered, or is about to be removed from the DOM. These methods help you manage the state, handle side effects, and perform cleanup operations.
 
 ## Getting Started
 
@@ -16,6 +21,3 @@ To begin your journey with React.js, follow these steps:
 - You can follow this playlist on YouTube [React JS Tutorial Bangla Series for Beginners | Think in a React way](https://youtube.com/playlist?list=PLHiZ4m8vCp9M6HVQv7a36cp8LKzyHIePr&si=eatcT7ohvlk8BflW)
 
 - You can also clone my Repository
-
-```bash
-git clone https://github.com/fokhrul2029/React-with-LWS.git
