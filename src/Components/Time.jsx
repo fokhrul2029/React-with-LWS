@@ -6,7 +6,7 @@ class Time extends React.Component {
     return (
       <div>
         <span>The Time is: </span>
-        <span>{new Date().toLocaleTimeString(this.props.locale)}</span>
+        <span>{new Date().toLocaleTimeString()}</span>
       </div>
     );
   }

@@ -1,16 +1,17 @@
 # React.js
 
-- Branch: lesson-6
-- Components and props
-- Search on Google to know more about that or watch 5 number video of the Playlist
+- Branch: lesson-7
+- React State & lifecycle
 
-## What is Components
+## React
 
-- Components are one of the core concepts of React. They are the foundation upon which you build user interfaces (UI)
+- In React, the "state" is a JavaScript object that represents the current state of a component. It is one of the fundamental concepts in React and plays a crucial role in building dynamic and interactive user interfaces
+- "Stateful Components:": Components in React can be either stateful or stateless. Stateful components are ones that have an associated state. Stateful components are created by extending the React.Component class and have the ability to manage their internal state
+- i Created a class component as Clock with state and lifecycle hook.
 
-## what is Props
+## Lifecycle Hook
 
-- React components use props to communicate with each other. Every parent component can pass some information to its child components by giving them props. Props might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions.
+- In React, lifecycle hooks (or lifecycle methods) are methods that are called at various stages of a component's existence. They allow you to perform actions at specific points in the lifecycle of a component, such as when it is about to be rendered, has been rendered, or is about to be removed from the DOM. These methods help you manage the state, handle side effects, and perform cleanup operations.
 
 ## Getting Started
 

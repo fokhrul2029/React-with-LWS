@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 // eslint-disable-next-line react/prop-types
-function Button({text}) {
-
+function Button() {
+const text = "This is a Button"
   return (
     <>
       <button>
