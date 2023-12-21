@@ -1,17 +1,12 @@
 # React.js
 
-- Branch: lesson-7
-- React State & lifecycle
+- Branch: lesson-8
+- Event Handling
 
-## React
+## Event Handling
 
-- In React, the "state" is a JavaScript object that represents the current state of a component. It is one of the fundamental concepts in React and plays a crucial role in building dynamic and interactive user interfaces
-- "Stateful Components:": Components in React can be either stateful or stateless. Stateful components are ones that have an associated state. Stateful components are created by extending the React.Component class and have the ability to manage their internal state
-- i Created a class component as Clock with state and lifecycle hook.
-
-## Lifecycle Hook
-
-- In React, lifecycle hooks (or lifecycle methods) are methods that are called at various stages of a component's existence. They allow you to perform actions at specific points in the lifecycle of a component, such as when it is about to be rendered, has been rendered, or is about to be removed from the DOM. These methods help you manage the state, handle side effects, and perform cleanup operations.
+- In React, event handling refers to the process of capturing and responding to user interactions, such as mouse clicks, keyboard inputs, or other actions that trigger events. React provides a consistent and declarative way to manage events by using a set of synthetic event wrappers that wrap the native browser events.
+- they have a clock and button, I have changed the language and text of Button by clicking on button
 
 ## Getting Started
 

@@ -1,0 +1,131 @@
+From 29fe114fcee3bd21af3fa7e84868400269f84c73 Mon Sep 17 00:00:00 2001
+From: fokhrul2029 <ifokhrul.2029@gmail.com>
+Date: Wed, 20 Dec 2023 15:55:09 +0600
+Subject: [PATCH] lesson-7
+
+---
+ README.md                 | 15 ++++++++-------
+ src/App.jsx               |  4 +++-
+ src/Components/Button.jsx |  4 ++--
+ src/Components/Clock.jsx  | 32 ++++++++++++++++++++++++++++++++
+ src/Components/Time.jsx   |  2 +-
+ 5 files changed, 46 insertions(+), 11 deletions(-)
+ create mode 100644 src/Components/Clock.jsx
+
+diff --git a/README.md b/README.md
+index bd3c8cb..1c75789 100644
+--- a/README.md
++++ b/README.md
+@@ -1,16 +1,17 @@
+ # React.js
+ 
+-- Branch: lesson-6
+-- Components and props
+-- Search on Google to know more about that or watch 5 number video of the Playlist
++- Branch: lesson-7
++- React State & lifecycle
+ 
+-## What is Components
++## React
+ 
+-- Components are one of the core concepts of React. They are the foundation upon which you build user interfaces (UI)
++- In React, the "state" is a JavaScript object that represents the current state of a component. It is one of the fundamental concepts in React and plays a crucial role in building dynamic and interactive user interfaces
++- "Stateful Components:": Components in React can be either stateful or stateless. Stateful components are ones that have an associated state. Stateful components are created by extending the React.Component class and have the ability to manage their internal state
++- i Created a class component as Clock with state and lifecycle hook.
+ 
+-## what is Props
++## Lifecycle Hook
+ 
+-- React components use props to communicate with each other. Every parent component can pass some information to its child components by giving them props. Props might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions.
++- In React, lifecycle hooks (or lifecycle methods) are methods that are called at various stages of a component's existence. They allow you to perform actions at specific points in the lifecycle of a component, such as when it is about to be rendered, has been rendered, or is about to be removed from the DOM. These methods help you manage the state, handle side effects, and perform cleanup operations.
+ 
+ ## Getting Started
+ 
+diff --git a/src/App.jsx b/src/App.jsx
+index 2d7c43c..ee6f3d0 100644
+--- a/src/App.jsx
++++ b/src/App.jsx
+@@ -2,12 +2,14 @@ import React from "react";
+ 
+ import Time from "./Components/Time";
+ import Button from "./Components/Button";
++import Clock from "./Components/Clock";
+ 
+ function App() {
+   return (
+     <React.Fragment>
+       <Time locale="bn-BD" />
+-      <Button text="This is a Button" />
++      <Button />
++      <Clock locale="bn-BD" />
+     </React.Fragment>
+   );
+ }
+diff --git a/src/Components/Button.jsx b/src/Components/Button.jsx
+index 6be04fe..0e50242 100644
+--- a/src/Components/Button.jsx
++++ b/src/Components/Button.jsx
+@@ -1,7 +1,7 @@
+ /* eslint-disable react/no-unescaped-entities */
+ // eslint-disable-next-line react/prop-types
+-function Button({text}) {
+-
++function Button() {
++const text = "This is a Button"
+   return (
+     <>
+       <button>
+diff --git a/src/Components/Clock.jsx b/src/Components/Clock.jsx
+new file mode 100644
+index 0000000..9c19020
+--- /dev/null
++++ b/src/Components/Clock.jsx
+@@ -0,0 +1,32 @@
++/* eslint-disable react/prop-types */
++import React from "react";
++
++class Clock extends React.Component {
++  state = { date: new Date() };
++
++  componentDidMount() {
++    this.timeCounter = setInterval(() => this.tick(), 1000);
++  }
++  componentWillUnmount() {
++    clearInterval(this.timeCounter);
++  }
++  tick() {
++    this.setState({
++      date: new Date(),
++    });
++  }
++
++  render() {
++    const { date } = this.state;
++    const { locale } = this.props;
++    return (
++      <div>
++        <br />
++        <span>Clock</span> <br />
++        <span>{date.toLocaleTimeString(locale)}</span>
++      </div>
++    );
++  }
++}
++
++export default Clock;
+diff --git a/src/Components/Time.jsx b/src/Components/Time.jsx
+index 3d8da22..8db1d07 100644
+--- a/src/Components/Time.jsx
++++ b/src/Components/Time.jsx
+@@ -6,7 +6,7 @@ class Time extends React.Component {
+     return (
+       <div>
+         <span>The Time is: </span>
+-        <span>{new Date().toLocaleTimeString(this.props.locale)}</span>
++        <span>{new Date().toLocaleTimeString()}</span>
+       </div>
+     );
+   }
+-- 
+2.43.0.windows.1
+
